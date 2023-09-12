@@ -1,0 +1,81 @@
+\documentclass[linenumbers,twocolappendix,twocolumn]{aastex631}
+\usepackage[T1]{fontenc}
+\usepackage{ae,aecompl}
+\usepackage{macros}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{placeins}
+\usepackage{times}
+
+\def\spose#1{\hbox to 0pt{#1\hss}}
+\def\lta{\mathrel{\spose{\lower 3pt\hbox{$\mathchar"218$}}
+     \raise 2.0pt\hbox{$\mathchar"13C$}}}
+\def\gta{\mathrel{\spose{\lower 3pt\hbox{$\mathchar"218$}}
+     \raise 2.0pt\hbox{$\mathchar"13E$}}}
+\def\inv{{${}^{-1}$}}
+
+\newcommand{\sech}{\mathrm{sech} \,}
+
+\newcommand{\appropto}{\mathrel{\vcenter{
+  \offinterlineskip\halign{\hfil$##$\cr
+    \propto\cr\noalign{\kern2pt}\sim\cr\noalign{\kern-2pt}}}}}
+
+
+\shorttitle{Superbubbles Paper}
+\shortauthors{J.S. Moreno \& B.W. Keller}
+
+\begin{document}
+\title{A Cool Paper About Superbubbles}
+
+\author{J.S. Moreno}
+\affiliation{Department of Physics and Materials Science, University of Memphis,
+\\ 3720 Alumni Avenue, Memphis, TN 38152, USA}
+\email{jsvdrmrn@memphis.edu}
+\author[0000-0002-9642-7193]{B.W. Keller}
+\affiliation{Department of Physics and Materials Science, University of Memphis,
+\\ 3720 Alumni Avenue, Memphis, TN 38152, USA}
+
+\begin{abstract} 
+    My cool abstract
+\end{abstract}
+
+\keywords{keywords}
+
+\section{Introduction}
+\section{Conclusion}
+
+\bibliographystyle{aasjournal}
+\bibliography{references}
+
+\appendix
+\section{Important Timescales}
+\subsection{Radiative Cooling of the Hot Interior}
+When the hot interior of a bubble cools will be critical in determining when a
+bubble transitions from an adiabatic, energy conserving evolution to a momentum
+conserving one.  A number of different works have determined different values
+for this, and we provide a brief survey of them as follows.
+
+\citet{MacLow1988} provides in their equation 14 an approximation based on the
+analytic calculations of \citet{Weaver1977}:
+
+\begin{equation}
+    t_{cool} =
+    (16\Myr)\left(\frac{Z}{Z_\odot}\right)^{-35/22}L_{38}^{3/11}n_0^{-8/11}
+\end{equation}
+
+Where the ambient density $n_0$ is given in $m_p \hcc$, and $L_{38}$ is the
+mechanical luminosity in $10^{38}\ergs$.  This will of course need to be
+modified when $t_{cool}<t_{SN}$, because after the last SN has detonated the
+energy injection halts.
+
+\subsection{Timescales for Bubble Destruction}
+Naturally, a bubble blown in the ISM will not persist forever, or else the
+entire ISM of a galaxy will be evacuated after only a few star clusters have
+formed. 
+
+In \citep{Orr2022}, it is assumed a bubble fragments (or at least stops growing)
+once the velocity of the shell is equal to the turbulent ISM velocity dispersion
+$v=\sigma$.
+
+\end{document}   
